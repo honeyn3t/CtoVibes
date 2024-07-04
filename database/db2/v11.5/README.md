@@ -7,7 +7,7 @@ adduser db2inst1
 
 passwd db2inst1
 
-<password_for_db2inst1>
+_<password_for_db2inst1>_
 
 usermod -a -G root db2inst1
 
@@ -19,13 +19,13 @@ useradd db2fenc1
 
 passwd db2fenc1
 
-<password_for_dbfence1>
+_<password_for_dbfence1>_
 
 sudo useradd db2user 
 
 sudo passwd db2user
 
-<password_for_db2user>
+_<password_for_db2user>_
 
 mkdir db2v11
 
