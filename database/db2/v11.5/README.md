@@ -1,4 +1,6 @@
-##Installing DB2 11.5.4 on a Redhat 9.4 box
+# Installing DB2 11.5.4 on a Redhat 9.4 box
+The following are the steps to take to install redhat 11.5.4 on a redhat server, and then to connect to that server from another machine. Note that there are 3 users that are required for this to happen. We also provide a companion code snipet that will provide a connection from a remote server to the db2 server.
+## On (soon to be) DB2 Server
 Commands to Install DB2
 
 adduser db2inst1
@@ -79,7 +81,7 @@ db2start
 
  ps -ef | grep db2sysc - check if instance is up and running
 
-#Create a DB
+## Create a DB
 
 db2 create database demodb
 db2 connect to demodb
@@ -87,8 +89,8 @@ db2 Grant connect privilege db2 grant connect on database to user db2user
 db2 grant createtab, bindadd, connect on database to user db2user
 
 
+## Remote connections
 On remote client run
-#Remote connections
 
 db2 catalog tcpip node rdemodb remote 9.30.116.184 server 50000 (edited) 
 db2 catalog database demodb as ademodb at node rdemodb (edited) 
