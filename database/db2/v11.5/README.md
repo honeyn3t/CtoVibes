@@ -84,14 +84,20 @@ db2start
 ## Create a DB
 
 db2 create database demodb
+
 db2 connect to demodb
+
 db2 Grant connect privilege db2 grant connect on database to user db2user 
+
 db2 grant createtab, bindadd, connect on database to user db2user
 
 
 ## Remote connections
 On remote client run
 
-db2 catalog tcpip node rdemodb remote 9.30.116.184 server 50000 (edited) 
-db2 catalog database demodb as ademodb at node rdemodb (edited) 
-db2 connect to ademodb user db2user using dublinzoo2024X12345
+db2 catalog tcpip node rdemodb remote <redhat9 server ip> server 50000
+
+db2 catalog database demodb as ademodb at node rdemodb 
+
+db2 connect to ademodb user db2user using <password_for_db2user>
+
