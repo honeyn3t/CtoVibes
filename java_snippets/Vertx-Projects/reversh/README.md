@@ -1,7 +1,7 @@
 
 # Reversh
 
-Reversh is a Vertx application built purely for educational purposes or as a challenge is a CTF.
+Reversh is a Vertx application built purely for educational purposes or as a challenge is a CTF. It is not to be used for nefarious actions. 
 
 
 ## Authors
