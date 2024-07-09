@@ -1,0 +1,23 @@
+<html lang="en">
+<body>
+
+  <table>
+            <thead>
+              <tr>
+                <th>SSID</th>
+                <th>Password</th>
+              </tr>
+                </thead>
+                <tbody>
+        {{#results}}
+        {{#each SSID}}
+            <tr>
+               <td>  {{SSID}} </td>
+              <td> {{password}}</td>
+               </tr>
+               {{/each}}
+        {{/results}}
+        </tbody>
+    </table>
+</body>
+</html>
