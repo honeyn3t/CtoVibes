@@ -19,10 +19,12 @@ usermod -a -G root db2inst1
 ```
 Open sudoer file to add new user
 ```
-vi /etc/sudoers
+visudo
 ```
-add line to bottom of file db2inst1 ALL= (ALL:ALL) ALL
-
+add line to bottom of file 
+```
+db2inst1 ALL= (ALL:ALL) ALL
+```
 Create fenceID
 ```
 useradd db2fenc1
